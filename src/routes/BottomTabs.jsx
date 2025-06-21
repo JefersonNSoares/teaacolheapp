@@ -13,6 +13,10 @@ export default function BottomTabs() {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         headerShown: false,
+        headerTitleAlign: 'center',
+        headerStyle: {
+          backgroundColor: '#007AFF', // Cor de fundo azul
+        },
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
@@ -26,9 +30,9 @@ export default function BottomTabs() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Início" component={Home} />
-      <Tab.Screen name="Rotina" component={Rotina} />
-      <Tab.Screen name="Emoções" component={Emocional} />
+      <Tab.Screen name="Emoções" component={Emocional} options={{ title: 'Regulação Emocional', headerShown: true }} />
+      <Tab.Screen name="Início" component={Home} options={{ title: 'Home', headerShown: true }}/>
+      <Tab.Screen name="Rotina" component={Rotina} options={{ title: 'Rotina', headerShown: true }}/>
     </Tab.Navigator>
   );
 }

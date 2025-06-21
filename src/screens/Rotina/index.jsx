@@ -36,7 +36,6 @@ export default function RotinaScreen() {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.titulo}>ROTINA</Text>
       <Text style={styles.subtitulo}>
         Agora é hora de fazer suas atividades. Você consegue! Um passo de cada vez.
       </Text>
