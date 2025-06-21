@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import Home from './src/screens/Home';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/routes/index';
+import AppNavigator from './src/routes/routes';
+import BottomTabs from './src/routes/BottomTabs';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <AppNavigator />
+      <BottomTabs />
     </NavigationContainer>
   );
 }
