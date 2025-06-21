@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
 import Rotina from '../screens/Rotina';
 import Emocional from '../screens/Emocional';
+import Formulario from '../screens/formulario'
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -23,6 +24,7 @@ export default function BottomTabs() {
           if (route.name === 'Início') iconName = 'home';
           else if (route.name === 'Rotina') iconName = 'calendar';
           else if (route.name === 'Emoções') iconName = 'happy';
+          else if (route.name === 'Formulario') iconName = 'document-text';
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
@@ -30,9 +32,14 @@ export default function BottomTabs() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
+      <Tab.Screen name="Formulario" component={Formulario} options={{ title: 'Formulario', headerShown: true }} />
+
       <Tab.Screen name="Emoções" component={Emocional} options={{ title: 'Regulação Emocional', headerShown: true }} />
+
       <Tab.Screen name="Início" component={Home} options={{ title: 'Home', headerShown: true }}/>
+
       <Tab.Screen name="Rotina" component={Rotina} options={{ title: 'Rotina', headerShown: true }}/>
+
     </Tab.Navigator>
   );
 }
