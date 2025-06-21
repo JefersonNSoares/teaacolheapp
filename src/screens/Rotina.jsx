@@ -1,10 +1,10 @@
 import React from 'react';
 import{View, Text} from 'react-native'
 
-export default function Home(){
+export default function Rotina(){
     return(
         <View>
-        <Text>Ola mundo</Text>
+          <Text>Ola mundo</Text>
         </View>
     )
 }
