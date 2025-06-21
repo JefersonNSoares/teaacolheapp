@@ -1,15 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text,  View, Platform, StatusBar as RNStatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/routes/routes';
 import BottomTabs from './src/routes/BottomTabs';
+
+
+const STATUSBAR_HEIGHT = Platform.OS === 'android' ? RNStatusBar.currentHeight : 0;
 
 export default function App() {
   return (
+    <>
+    <View style={{ height: STATUSBAR_HEIGHT, backgroundColor: '#2196F3' }} />
+      <StatusBar style="light" />
     <NavigationContainer>
       <BottomTabs />
     </NavigationContainer>
+    </>
   );
 }
 

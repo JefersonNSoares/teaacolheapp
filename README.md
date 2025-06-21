@@ -6,7 +6,7 @@ Desenvolvido com **React Native (Bare Workflow)**, o app combina acessibilidade,
 
 ---
 
-## 📱 Funcionalidades
+## 📱 Funcionalidades 
 
 - ✅ Criação e gerenciamento de rotinas personalizadas
 - 💬 Recursos de apoio emocional e sugestões de autorregulação
