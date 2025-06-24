@@ -21,7 +21,6 @@ Desenvolvido com **React Native (Bare Workflow)**, o app combina acessibilidade,
 - [JavaScript](https://www.javascript.com/)
 - [Expo Modules](https://docs.expo.dev/bare/exploring-bare-workflow/)
 - [React Navigation](https://reactnavigation.org/)
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
 - [Firebase](https://firebase.google.com/?hl=pt-br)
 
 
