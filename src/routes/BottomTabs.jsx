@@ -32,13 +32,17 @@ export default function BottomTabs() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Formulario" component={Formulario} options={{ title: 'Formulario', headerShown: true }} />
+      {/* <Tab.Screen name="Formulario" component={Formulario} options={{ title: 'Formulario', headerShown: true }} /> */}
+
+      <Tab.Screen name="Início" component={Home} options={{ title: 'Inicio', headerShown: true }}/>
+
+      <Tab.Screen name="Rotina" component={Rotina} options={{ title: 'Rotina', headerShown: true }}/>
 
       <Tab.Screen name="Emoções" component={Emocional} options={{ title: 'Regulação Emocional', headerShown: true }} />
 
-      <Tab.Screen name="Início" component={Home} options={{ title: 'Home', headerShown: true }}/>
+      
 
-      <Tab.Screen name="Rotina" component={Rotina} options={{ title: 'Rotina', headerShown: true }}/>
+      
 
     </Tab.Navigator>
   );
