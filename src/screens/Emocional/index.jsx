@@ -1,18 +1,21 @@
 import React from 'react';
 import{View, Text, Image,StyleSheet, ScrollView, TouchableOpacity} from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 export default function Emocional(){
+  const navigation = useNavigation();
+
     return(
         <ScrollView style={styles.container}>
           <Text style={styles.Title}>Eu sei que está dificil agora, mas tente clicar e seguir os passos abaixo para acalmar a mente um pouco. Você não está sozinho(a)! Estamos aqui com você!</Text>
 
-          <TouchableOpacity style={styles.botao}>
+          <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Respiracao')}>
               <Image source={require('../../../assets/emocional/icone-respiracao.png')} resizeMode="contain" style={styles.image}/>
               <Text style={styles.TitleCard1}>Exercícios de respiração guiada</Text>
           </TouchableOpacity>
 
 
-          <TouchableOpacity style={styles.botao}>
+          <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Meditacao')}>
               <Image source={require('../../../assets/emocional/icone-meditacao.png')} resizeMode="contain" style={styles.image}/>
               <Text style={styles.TitleCard2}>Meditação</Text>
           </TouchableOpacity>
