@@ -11,7 +11,7 @@ export default function Respiracao() {
         <Text style={styles.title}>Respiração para acalmar</Text>
         <YoutubePlayer
           height={220}
-          videoId={'Oe421EPjeBE'} 
+          videoId={'mPepsJkhIPs'} 
           play={false}
         />
       </View>

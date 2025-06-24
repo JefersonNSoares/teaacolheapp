@@ -14,18 +14,19 @@ export const botoesComunicador = [
         iconName: 'walk',
         sound: require('../../../assets/sounds/masculino-não.mp3'),
       },
-    ],
-  },
-  {
-    sectionTitle: 'PESSOAL',
-    items: [
-      {
+       {
         id: 'lugares',
         label: 'Sim',
         iconLib: Ionicons,
         iconName: 'location-outline',
         sound: require('../../../assets/sounds/masculino-sim.mp3'),
-      },
+      }
+    ],
+  },
+  {
+    sectionTitle: 'PESSOAL',
+    items: [
+     
       {
         id: 'emocoes',
         label: 'Terminei',
