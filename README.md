@@ -2,7 +2,7 @@
 
 **TEAacolhe** é um aplicativo inteligente de **rotinas**, **regulação emocional** e **inclusão** para adolescentes e jovens com **Transtorno do Espectro Autista (TEA)**.
 
-Desenvolvido com **React Native (Bare Workflow)**, o app combina acessibilidade, inteligência artificial e funcionalidades offline para oferecer suporte diário de forma simples e eficaz.
+Desenvolvido com **React Native (Bare Workflow)**, o app combina acessibilidade, inteligência artificial e funcionalidades offline para oferecer suporte diário de forma simples e eficaz e se destaca dos demais apps já existentes por acompanhar todo o desenvolvimento da pessoa autista e não focar só na infância.
 
 ---
 
